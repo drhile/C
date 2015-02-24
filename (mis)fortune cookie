@@ -7,6 +7,8 @@ int main() {
 	int iResponse = 0;
 	srand(time(NULL));
 	iRandomNum = (rand() % 4) + 1;
+	int lottoNum = ((rand() % 49) + 1);
+	int *pLottoNum = &lottoNum;
 
 	system("clear");
 	printf("\n(Mis)Fortune Cookie\n");
@@ -27,11 +29,11 @@ int main() {
 		}
 
 	printf("\nYour Unlucky Lotto Numbers: ");
-	printf("%d ", (rand() % 49) + 1);
-	printf("%d ", (rand() % 49) + 1);
-	printf("%d ", (rand() % 49) + 1);
-	printf("%d ", (rand() % 49) + 1);
-	printf("%d ", (rand() % 49) + 1);
-	printf("%d\n", (rand() % 49) + 1);
+	printf("%d ", *pLottoNum);
+	printf("%d ", *pLottoNum);
+	printf("%d ", *pLottoNum);
+	printf("%d ", *pLottoNum);
+	printf("%d ", *pLottoNum);
+	printf("%d\n", *pLottoNum);
 	return 0;
 }
