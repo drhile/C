@@ -35,7 +35,7 @@ int main() {
     	printf("\n%d + %d = ", op1[x], op2[x]);
     	scanf("%d", &answer[x]);
     	if ( answer[x] == op1[x] + op2[x] )
-    	    result = 'c';
+    	    result[x] = 'c';
     	else
     	    result[x] = 'i';
     }
