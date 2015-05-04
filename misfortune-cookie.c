@@ -4,7 +4,6 @@
 
 int main() {
 	int iRandomNum = 0;
-	int iResponse = 0;
 	srand(time(NULL));
 	iRandomNum = (rand() % 4) + 1;
 
