@@ -37,7 +37,7 @@ int main(int argc, char** const argv)
 		op2[i] = rand() % 100;
 		answer[i] = op1[i] + op2[i]; 
 		
-		printf("%d. %d + %d = ", i, op1[i], op2[i]);
+		printf("%d. %d + %d = ", i + 1, op1[i], op2[i]);
 		scanf("%d", &guess);
 
 		if(answer[i] == guess)
